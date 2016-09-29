@@ -39,7 +39,6 @@ function locSearch(city, state, address) {
 function searchPlace_click() {
     var zip = $("#loc").val();
     locSearch("", "", zip);
-<<<<<<< HEAD
     
 }
 
@@ -49,21 +48,11 @@ function remove2(){
 
 function remove(){
     $('#templateDiv').last().remove();
-=======
-
->>>>>>> a4ae6a03bbf78179956519300d8dd7487c3f4a8e
 }
 
 $(function () {
     $("#searchPlace").on("click", searchPlace_click);
-<<<<<<< HEAD
     $("#remove").on("click", remove);
-=======
-    $(document).on('click', '#remove', function () {
-      $(this).parent('#tempDiv').remove();
-});
-
->>>>>>> a4ae6a03bbf78179956519300d8dd7487c3f4a8e
 });
 
 
