@@ -1,0 +1,94 @@
+.clear-day{
+    background-image: url("http://www.gannett-cdn.com/-mm-/1f09360cfabb773cdf6fa082f2fafe397a2d03b1/c=28-0-479-338&r=x404&c=534x401/local/-/media/FortMyers/2014/12/08/B9315415807Z.1_20141208164230_000_GI99BRCAH.1-0.jpg") ;
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.clear-night{
+background-image: url("http://www.gannett-cdn.com/-mm-/1f09360cfabb773cdf6fa082f2fafe397a2d03b1/c=28-0-479-338&r=x404&c=534x401/local/-/media/FortMyers/2014/12/08/B9315415807Z.1_20141208164230_000_GI99BRCAH.1-0.jpg") ;
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.rain{
+background-image:url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL58-hC5SB7J4-v5QU9O-CkEqV2IQedlmjSFAqQiJdCiKhr-AAUQ");
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.snow{
+background-image:url ("http://nhungcaunoihay.net/wp-content/uploads/2015/11/hinh-anh-tuyet-roi-mua-dong-dep-nhat-the-gioi-nam-2015-5.jpg");
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.sleet{
+background-image: url("http://cdn3.blackburnlife.com/wp-content/uploads/2012/01/Snow-Ice.jpg");
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.wind{
+background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq7EI4NLDWBCfyL1xost0KQZi1gfrXuK68zHACToXeZFB77BOm");
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.fog{
+background-image: url("http://i.telegraph.co.uk/multimedia/archive/02061/leicester-park_2061557i.jpg") ;
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.partly-cloudy-day{
+background-image: url("http://farm3.staticflickr.com/2580/5808817440_f58aca7d8e_z.jpg") ;
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.partly-couldy-night{
+background-image: url("http://farm3.staticflickr.com/2580/5808817440_f58aca7d8e_z.jpg") ;
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.cloudy{
+    background-image: url("http://farm3.staticflickr.com/2580/5808817440_f58aca7d8e_z.jpg") ;
+ background-repeat:no-repeat;
+    background-size:cover;
+}
+
+
+#remove{
+    height:30px;
+    width:30px;
+}
+
+#searchPlace{
+    height:30px;
+    width:30px;
+}
+
+.forAllDivs {
+    
+    
+    border: 4px solid black;
+    border-radius: 10px;
+    background-repeat:no-repeat;
+    text-align:center;
+    color: black;
+}
+
+body{
+
+    background-image: url("http://static1.squarespace.com/static/547d0cfbe4b056624bc38787/t/5507251ee4b07d28919a8837/1426531626892/blue-sky.png?format=1500w");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+h5{
+    font-weight:bolder;
+    font-size:16px;
+}
+
