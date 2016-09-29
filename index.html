@@ -16,7 +16,14 @@
 
 <body>
     <!--Facebook BS -->
-  
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--End Facebook BS-->
 
 
@@ -25,12 +32,14 @@
             <nav class="navbar navbar-inverse" style="height:10%">
                 <div class="row col-md-12"></div>
                 <!-- More Facebook BS -->
-                <div class="fb-share-button navbar-brand col-me-2"><a href="http://www.facebook.com" target="#_blank"><img src="facebookIcon.png" /> Share</a>
+                <div class="fb-share-button navbar-brand col-me-2" data-href="file:///Users/andrewlewis/Desktop/weatherly/index.html?#"
+                    data-layout="button_count" data-mobile-iframe="true">
+                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse"><img src="facebookIcon.png" /> Share</a>
                <!--End Facebook BS again-->
                 </div>
                 <div class="col-md-1"></div>
                <div class="col-md-3">
-                <span class="navbar-brand  hidden-sm hidden-s hidden-xs">Real-time updates by</span>
+                <span class="navbar-brand hidden-sm hidden-s hidden-xs">Real-time updates by</span>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-3">
