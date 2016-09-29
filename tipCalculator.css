@@ -1,0 +1,82 @@
+.moneySpan{
+    color:black;
+    font-size:20px;
+    font-weight:bolder;
+}
+.headerSpan{
+    color:Gray;
+    font-size:40px;
+    margin-left:40%;
+}
+.imageContainer{
+    background-image:url("http://3e8srg4b6qwh33x5ic36aap8.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/11-5-Quiz-Header.jpg");
+    height:625px;;
+}
+.functionContainer{
+    background-image:url("http://previews.123rf.com/images/dekay/dekay1109/dekay110900028/10528531-Beige-linen-folded-tablecloth-bordered-with-crocheted-lace--Stock-Photo.jpg");
+    border-radius:10px;
+    border:5px solid black;
+    height:625px;
+}
+.functionContainerSpacerRow{
+    height:10%;
+}
+.inputSpacerRow{
+    height:5%;
+}
+.billInputSpan{
+    color:black;
+    font-size:20px;
+    font-weight:bold;  
+}
+.shareInputSpan{
+    color:black;
+    font-size:18px;
+    font-weight:bold; 
+}
+.personInputSpan{
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+}
+.dropdownSpan{
+    color:black;
+    font-size:18;
+    font-weight:bold;
+}
+#calculateButton{
+    background-color:#990000;
+    border:3px solid black;
+    font-size:32px;
+    font-weight:bolder;
+    color:black;
+    height:10%;
+    border-radius:10px;
+}
+#tipValue{
+    background-image:url("http://previews.123rf.com/images/dekay/dekay1109/dekay110900028/10528531-Beige-linen-folded-tablecloth-bordered-with-crocheted-lace--Stock-Photo.jpg");
+    height:8%;
+    color:black;
+    font-size:28px;
+    font-weight:bolder;
+    border-radius:10px;
+    visibility:hidden;
+}
+#clearButton{
+    background-color:#990000;
+    font-size:32px;
+    font-weight:bolder;
+    color:black;
+    height:8%;
+    border:3px solid black;
+    border-radius:10px;
+}
+li{
+    border:1px solid black;
+}
+body{
+    background-color:black;
+}
+
+
+

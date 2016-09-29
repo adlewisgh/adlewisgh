@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title> Tip Caculator </title>
+
+
+
+
+    <!--Begin Header info, links, and references-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="tipCalculator.js"></script>
+    <link type="text/css" href="tipCalculator.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container col-md-12">
+        <div class="row col-md-12">
+            <!--End Header info, links, and references-->
+
+
+
+
+            <!-----Begin Nav Bar----->
+            <nav class="navbar navbar-inverse">
+                <div class="col-md-2">
+                    <a href="http:www.sharethis.com" target="#_blank"><img class="pull-left" src="http://i.picresize.com/images/2016/09/28/YauL.png" /></a>
+                </div>
+                <div class="col-md-8">
+                    <span class="headerSpan pull-left">Tip Calculator</span>
+                </div>
+            </nav>
+        </div>
+        <!----End Nav Bar---->
+
+
+
+
+        <!--Begin Image container-->
+        <div class="imgSpacerCol col-md-1"></div>
+        <div class="imageContainer container col-md-10">
+
+
+
+
+            <!--Begin Function Container-->
+
+            <div class="functionContainerSpacerCol col-md-4"></div>
+            <div class="functionContainer container col-md-5">
+
+
+
+
+                <!--Begin Dropdown Header-->
+                <div class="inputSpacerRow row col-md-12 "></div>
+                <div class="row col-md-12">
+                    <span class="dropdownSpan">How was your service?</span>
+                </div>
+                <div class="inputSpacerRow row col-md-12 "></div>
+                <div class="row col-md-12">
+                    <div class="inputSpacerCol col-md-3"></div>
+                    <!--End Dropdown Header-->
+
+
+
+
+                    <!--Begin Dropdown Menu-->
+                    <select id="menu" class="col-md-6" type="required">
+                                    <option value="0">-Choose an option--</option>
+                                    <option value="30%">30% - Awesome</option>
+                                    <option value="15%">15% - Average</option>
+                                    <option value="5%">5% - Poor</option>
+                                </select>
+                </div>
+                <!--End Dropdown Menu-->
+
+
+
+
+                <!--Begin Bill Input-->
+                <div class="inputSpacerRow row col-md-12 "></div>
+                <div class="row col-md-12">
+                    <span class="billInputSpan">How much was your bill?</span>
+                </div>
+                <div class="inputSpacerRow row col-md-12"></div>
+                <div class="row col-md-12">
+                    <div class="inputSpacerCol col-md-2"></div>
+                        <div class="moneySpan col-md-1"></div>
+    
+                    <input id="bill" type="number required" placeholder="$ Bill Amount" onkeypress='validate(event) ' maxlength="6"></input>
+                </div>
+                <!--End Bill Input-->
+
+
+
+
+                <!--Begin Persons Sharing Input-->
+                <div class="inputSpacerRow row col-md-12 "></div>
+                <div class="row col-md-12">
+                    <span class="shareInputSpan">How many people are sharing your bill?</span>
+                    <div class="inputSpacerRow row col-md-12"></div>
+                </div>
+                <div class="row col-md-12">
+                   <div class="inputSpacerCol col-md-3"></div>
+                    <input id="share" class="col-md-2" type="number required" Value="1" placeholder="1" onkeypress='validate(event) ' maxlength="1"></input>
+                    <div class="spacerCol col-md-1"></div>
+                    <span class="personInputSpan"> *Person'(s)</span>
+                </div>
+                <!--End Persons Sharing Input-->
+
+
+
+
+                <!--Begin Calculate Button-->
+                <div class="inputSpacerRow row col-md-12"></div>
+
+                <div class="row col-md-12">
+                    <div class="inputSpacerCol col-md-3"></div>
+                    <button class="col-md-7" id="calculateButton">Calculate</button>
+                </div>
+                <!--End Calculate Button-->
+
+
+
+                <!--Begin Amount Div-->
+                <div class="row col-md-12">
+                    <div class="inputSpacerRow row col-md-12"></div>
+                    <div class="inputSpacerCol col-md-4"></div>
+                    <div id="tipValue" class="col-md-8">$ Amount</div>
+                </div>
+                <!--End Amount Div-->
+
+
+                <!--Begin Clear Button-->
+
+                <div class="inputSpacerRow row col-md-12"></div>
+                <div class="row col-md-12">
+                    <div class="buttonDiv col-md-2 pull-right">
+                        <button id="clearButton" class="glyphicon glyphicon-repeat"></button>
+                        <!--End Clear Button-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
