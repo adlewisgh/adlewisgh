@@ -4,11 +4,11 @@ var answer2;
 var answer3;
 // Set up the game.
 function setupGame() {
-  /*  //Clear out old values.
+   //Clear out old values.
     $('#inputOne').val("");
     $('#inputTwo').val("");
     $('#inputThree').val("");
-    // come up with the answer.*/
+    // come up with the answer.
     answer = parseInt(Math.random() * 10);
    
     answer2 = parseInt(Math.random() * 10);
