@@ -1,0 +1,73 @@
+.jackpotHeader{
+  color:red;
+}
+
+.lotteryHeader{
+    color:orange;
+}
+
+.jackpotHeader2{
+  color:orange;
+}
+
+.lotteryHeader2{
+    color:red;
+}
+
+.inputCol1{
+    font-size:50px;
+}
+
+img{
+    height:100px;
+    width:400px;
+
+}
+
+.inputSpacerRow{
+    height:3px;
+}
+
+input{
+    height:98%;
+    width:100%;
+    font-size:150px;
+    text-align:center;
+    background-color: dimgray;
+}
+
+body{
+background-color:black;
+}
+
+.functionContainer{
+    border:3px solid black;
+}
+
+.functionRow{
+    border:3px solid gray;
+    height:350px;
+}
+
+.functionCol{
+    border:3px solid dimgray;
+    height:350px;
+}
+
+.startBtn{
+background-color:green;
+}
+
+.checkBtn{
+background-color:orange;
+}
+
+.retryBtn{
+background-color:red;
+height:40px;
+}
+
+button{
+border-radius:7px;
+border:2px solid dimgray;
+}
