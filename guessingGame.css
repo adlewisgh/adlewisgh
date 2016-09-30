@@ -57,6 +57,10 @@ background-color:black;
     border-radius:10px;
 }
 
+#shareThis{
+    width:250px;
+}
+
 .startBtn{
 background-color:limegreen;
 font-weight:bolder;
@@ -71,6 +75,26 @@ font-weight:bolder;
 background-color:limegreen;
 height:40px;
 font-weight:bolder;
+}
+
+#guide1{
+    font-size:30px;
+    color:green;
+}
+
+#guide2{
+    font-size:30px;
+    color:yellow;
+}
+
+#guide3{
+    font-size:30px;
+    color:red;
+}
+
+#attempts{
+    font-size: 30px;
+    color:orange;
 }
 
 button{

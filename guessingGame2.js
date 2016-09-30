@@ -14,10 +14,21 @@ function setupGame() {
     answer2 = parseInt(Math.random() * 10);
     
     answer3 = parseInt(Math.random() * 10);
+    
+    answerCheck(answer,answer2,answer3);
+
+
+
+
+    function answerCheck(){
     console.log("Cheater! Don't you dare enter " + answer);
     console.log("Cheater! Don't you dare enter " + answer2);
     console.log("Cheater! Don't you dare enter " + answer3);
-
+    $("#startBtn").hide();
+    $("#attempts").show();
+    
+    //Hide Show the approptriate divs.
+    }
 
 
 if (answer == answer2){
@@ -33,13 +44,6 @@ if (answer == answer2){
         else{
              
         }
-
-
-
-
-    //Hide Show the approptriate divs.
-   // $('#intro').show();
-   // $('#game').hide();
 
 }
 // handle the guess.
@@ -137,8 +141,8 @@ $(function () {
     //wire up event handlers.
     $('#startBtn').on("click", playGame);
     $('#checkBtn').on("click", validate);
-   
-
+   $("#attempts").hide();
+alert("click play to begin");
     // Start the game.
     
     
