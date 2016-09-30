@@ -47,12 +47,9 @@ function handleGuess() {
     var guess = $('#inputOne').val();
     var guess2 = $('#inputTwo').val();
     var guess3 = $('#inputThree').val();
-    if(+guess2.length == 0){
-
-    }
-
     
-    else if (+guess == answer) {
+
+    if (+guess == answer) {
         //tell them the answer is right
        $("#inputOne").css("background-color","green");
         
@@ -110,6 +107,7 @@ if (+guess3 == answer3) {
 
 // set up the page for the game.
 function playGame() {
+    setupGame();
     $('#intro').hide();
     $('#game').show();
     
@@ -139,11 +137,11 @@ else{
 $(function () {
 
     //wire up event handlers.
-    $('#startGame').on("click", playGame);
+    $('#startBtn').on("click", playGame);
     $('#checkBtn').on("click", validate);
    
 
     // Start the game.
     
-    setupGame();
+    
 });
