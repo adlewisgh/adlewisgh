@@ -4,17 +4,19 @@ var answer2;
 var answer3;
 // Set up the game.
 function setupGame() {
-    //Clear out old values.
+  /*  //Clear out old values.
     $('#inputOne').val("");
     $('#inputTwo').val("");
     $('#inputThree').val("");
-    // come up with the answer.
+    // come up with the answer.*/
     answer = parseInt(Math.random() * 10);
    
     answer2 = parseInt(Math.random() * 10);
     
     answer3 = parseInt(Math.random() * 10);
-    
+    console.log("Cheater! Don't you dare enter " + answer);
+    console.log("Cheater! Don't you dare enter " + answer2);
+    console.log("Cheater! Don't you dare enter " + answer3);
 
 
 
@@ -29,17 +31,15 @@ if (answer == answer2){
         }
 
         else{
-             console.log("Cheater! Don't you dare enter " + answer);
-             console.log("Cheater! Don't you dare enter " + answer2);
-             console.log("Cheater! Don't you dare enter " + answer3);
+             
         }
 
 
 
 
     //Hide Show the approptriate divs.
-    $('#intro').show();
-    $('#game').hide();
+   // $('#intro').show();
+   // $('#game').hide();
 
 }
 // handle the guess.
@@ -52,7 +52,6 @@ function handleGuess() {
     if (+guess == answer) {
         //tell them the answer is right
        $("#inputOne").css("background-color","green");
-        
     }
 
      else if (+guess == answer2){
@@ -65,9 +64,8 @@ function handleGuess() {
    else if (+guess != answer || answer2 || answer3){
         $("#inputOne").css("background-color","red");
    }
-
-
   
+
     if (+guess2 == answer2) {
         //tell them the answer is right
        $("#inputTwo").css("background-color","green");
@@ -100,16 +98,16 @@ if (+guess3 == answer3) {
    }
         
 
-        if(+guess == answer && +guess2 == answer2 && +guess3 == answer3){
-            console.log("You're win!");
+        else if(+guess == answer && +guess2 == answer2 && +guess3 == answer3){
+            console.log("You win!");
         }
 }
 
 // set up the page for the game.
 function playGame() {
-    setupGame();
-    $('#intro').hide();
-    $('#game').show();
+   setupGame();
+   // $('#intro').hide();
+   // $('#game').show();
     
 }
 
@@ -120,7 +118,7 @@ function validate () {
 
 if(guess.length < 1){
     
-}
+}   
 
     else if(guess2.length < 1){
 
