@@ -42,32 +42,43 @@ background-color:black;
 
 .functionContainer{
     border:3px solid black;
+    border-radius:10px;
 }
 
 .functionRow{
     border:3px solid gray;
     height:350px;
+    border-radius:10px;
 }
 
 .functionCol{
     border:3px solid dimgray;
     height:350px;
+    border-radius:10px;
 }
 
 .startBtn{
-background-color:green;
+background-color:limegreen;
+font-weight:bolder;
 }
 
 .checkBtn{
 background-color:orange;
+font-weight:bolder;
 }
 
 .retryBtn{
-background-color:red;
+background-color:limegreen;
 height:40px;
+font-weight:bolder;
 }
 
 button{
 border-radius:7px;
 border:2px solid dimgray;
+}
+
+.playContainer{
+    border:3px solid dimgray;
+    height:350px;
 }

@@ -5,37 +5,16 @@ var answer3;
 // Set up the game.
 function setupGame() {
     //Clear out old values.
-    $('#inputOne').val("");
-    $('#inputTwo').val("");
-    $('#inputThree').val("");
+    $('#inputOne').val(" ");
+    $("#message").val(" ");
+
     // come up with the answer.
     answer = parseInt(Math.random() * 10);
-   
+    console.log("Cheater! Don't you dare enter " + answer);
     answer2 = parseInt(Math.random() * 10);
-    
+    console.log("Cheater! Don't you dare enter " + answer2);
     answer3 = parseInt(Math.random() * 10);
-    
-
-
-
-if (answer == answer2){
-    setupGame()
-}
-    else if (answer == answer3){
-        setupGame()
-    }
-        else if(answer2 == answer3){
-            setupGame()
-        }
-
-        else{
-             console.log("Cheater! Don't you dare enter " + answer);
-             console.log("Cheater! Don't you dare enter " + answer2);
-             console.log("Cheater! Don't you dare enter " + answer3);
-        }
-
-
-
+    console.log("Cheater! Don't you dare enter " + answer3);
 
     //Hide Show the approptriate divs.
     $('#intro').show();
@@ -47,12 +26,7 @@ function handleGuess() {
     var guess = $('#inputOne').val();
     var guess2 = $('#inputTwo').val();
     var guess3 = $('#inputThree').val();
-    if(+guess2.length == 0){
-
-    }
-
-    
-    else if (+guess == answer) {
+    if (+guess == answer) {
         //tell them the answer is right
        $("#inputOne").css("background-color","green");
         
@@ -71,12 +45,12 @@ function handleGuess() {
 
 
   
-    if (+guess2 == answer2) {
+    if (+guess2 == answer) {
         //tell them the answer is right
-       $("#inputTwo").css("background-color","green");
+       $("#inputTwo").css("background-color","yellow");
     }
-     else if (+guess2 == answer){
-         $("#inputTwo").css("background-color","yellow");
+     else if (+guess2 == answer2){
+         $("#inputTwo").css("background-color","green");
     }
     else if (+guess2 == answer3){
         $("#inputTwo").css("background-color","yellow");
@@ -87,15 +61,15 @@ function handleGuess() {
    }
 
 
-if (+guess3 == answer3) {
+if (+guess3 == answer) {
         //tell them the answer is right
-       $("#inputThree").css("background-color","green");
+       $("#inputThree").css("background-color","yellow");
     }
      else if (+guess3 == answer2){
          $("#inputThree").css("background-color","yellow");
     }
-    else if (+guess3 == answer){
-        $("#inputThree").css("background-color","yellow");
+    else if (+guess3 == answer3){
+        $("#inputThree").css("background-color","green");
     }
 
    else if (+guess3 != answer || answer2 || answer3){
@@ -112,38 +86,15 @@ if (+guess3 == answer3) {
 function playGame() {
     $('#intro').hide();
     $('#game').show();
-    
 }
-
-function validate () {
-    var guess = $('#inputOne').val();
-    var guess2 = $('#inputTwo').val();
-    var guess3 = $('#inputThree').val();
-
-if(guess.length < 1){
-    
-}
-
-    else if(guess2.length < 1){
-
-    }
-
-    else if(guess3.length <1){
-
-    }
-else{
-    handleGuess();
-}}
 
 //when the page loads, setup the game.
 $(function () {
 
     //wire up event handlers.
     $('#startGame').on("click", playGame);
-    $('#checkBtn').on("click", validate);
-   
+    $('#checkBtn').on("click", handleGuess);
 
     // Start the game.
-    
     setupGame();
 });

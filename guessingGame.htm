@@ -51,15 +51,15 @@
     
 
 
-<!--Begin Start Button-->
-<div class="container col-md-12">
+<!--Begin Attempts Span-->
+<div id="Container" class="Container col-md-12">
     <div class="col-md-5"></div>
     <div class="col-md-2">
-<button id="startBtn" class="startBtn col-md-12">Start</button>
+<button id="startBtn" class="startBtn col-md-12">Play Now!</button>
 </div>
 <div class="col-md-5"></div>
 </div>
-<!--End Start Button-->
+<!--End Attemps Span-->
 
 
 
@@ -69,22 +69,31 @@
 
 
 
+
+
     <!----Begin Function Container---->
-    <div class="functionContainer container col-md-6">
+    
+        <div id="functionContainer" class="functionContainer container col-md-6">
         <div class="functionCol col-md-4">
             <div class="inputSpacerRow row col-md-12"></div>
-            
-            <input id="inputOne" class="inputOne" type="number" maxlength="1"></input>
+            <form action="demo_form.asp">
+            <input id="inputOne" class="inputOne required" type="number submit required" placeholder="7" onkeypress='validate(event)' maxlength="1" required="true"></input>
+            </form>
         </div>
         <div class="functionCol col-md-4">
             <div class="inputSpacerRow row col-md-12"></div>
-            <input id="inputTwo" type="number" maxlength="1"></input>
+            <form action="demo_form.asp">
+            <input id="inputTwo" class="required" type="number submit required" placeholder="7" onkeypress='validate(event)' maxlength="1" required="true"></input>
+            </form>
         </div>
         
         <div class="functionCol col-md-4">
             <div class="inputSpacerRow row col-md-12"></div>
-            <input id="inputThree" type="number" maxlength="1"></input>
+            <form action="demo_form.asp">
+            <input id="inputThree" class="required" type="number submit required" placeholder="7" onkeypress='validate(event)' maxlength="1" required="true"></input>
+            </form>
         </div>
+    </div>
     </div>
     <!------End Function Container------>
 
@@ -99,10 +108,12 @@
 
 
 <!--Begin Check Button--->
-<div class="container col-md-12">
+<div id="checkContainer" class="checkContainer col-md-12">
     <div class="col-md-5"></div>
     <div class="col-md-2">
+        <form action="">
 <button id="checkBtn" type="submit" class="checkBtn col-md-12">Check</button>
+</form>
 </div>
 <!--End Check Button--->
 
