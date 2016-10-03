@@ -141,8 +141,8 @@ $(function () {
     //wire up event handlers.
     $('#startBtn').on("click", playGame);
     $('#checkBtn').on("click", validate);
-   $("#attempts").hide();
-alert("click play to begin");
+    $("#attempts").hide();
+    alert("click play to begin");
     // Start the game.
     
     
