@@ -1,24 +1,36 @@
-var place;
-var map;
+        var map;
+        var lat;
+        var long;
+function generateMap() {
+  //$('#map').show();
+  };
 
 
-      function initMap(lat, long) {
-        map = new google.maps.Map(document.getElementById('#map'), {
-          center: {lat:lat, lng:long},
-          zoom: 8
-        });
-      }
-   
-    
+     function initMap(lat,long) {
+  var myLatLng = {lat: lat, lng: long};
 
-function locSearch_Complete(result) {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 9,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: "Location"
+  });
+  $('#map').append(map);
+}
+
+
+
+      function locSearch_Complete(result) {
     var lat = result.results[0].geometry.location.lat;
     var long = result.results[0].geometry.location.lng;
     place = result.results[0].address_components[1].short_name + "," +
         result.results[0].address_components[3].short_name;
-console.log(lat,long);
-   initMap(lat, long);
-}
+    initMap(lat,long);
+      }
 
 function locSearch(city, state, address) {
 
@@ -44,16 +56,14 @@ function locSearch(city, state, address) {
 }
 
 
-
 function getZip (){
-var zip = $("#zipCode").val();
+   var zip = $("#searchBox").val();
     console.log(zip);
-  locSearch("", "", zip);
-  
+    locSearch("", "", zip);
 }
 
 
-
-$(function(){
-$('#searchBtn').on("click", getZip);
-});
+      $(function(){
+         // $('#map').hide();
+          $('#startBtn').on("click", getZip);
+      });
